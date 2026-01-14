@@ -1,13 +1,23 @@
-# Site estático - Dentista
+Coloque aqui os vídeos para o hero
 
-Estrutura inicial do site estático para clínica odontológica.
+Como usar
 
-Como usar:
-1. Abra `index.html` no navegador.
-2. Substitua imagens em `images/` e atualize textos no `index.html`.
-3. Atualize o número do WhatsApp em `js/main.js`.
+1) Formatos recomendados: mp4 (H.264) ou webm (VP9).
+2) Resolução sugerida: 1280x720 (720p) ou 1920x1080 (1080p). Evite arquivos muito grandes (preferível < 10–15 MB para web).
+3) Nome sugerido: `hero.mp4` ou `hero.webm`.
+4) Poster / fallback: coloque uma imagem em `assets/images/hero-poster.jpg` (ex: 1920x1080).
 
-Próximos passos:
-- Incluir logo e fotos reais
-- Ajustar cores/typography segundo identidade visual
-- Implementar SEO e form post (backend) se desejar
+Instruções rápidas
+
+- Para usar direto no HTML, substitua a fonte em `index.html`:
+  <source src="assets/videos/hero.mp4" type="video/mp4">
+
+- Ou carregue dinamicamente no console ou no seu script:
+  window.setHeroVideo('assets/videos/hero.mp4', 'video/mp4', 'assets/images/hero-poster.jpg');
+
+Notas
+
+- No mobile o vídeo fica oculto automaticamente para poupar dados; o `poster` será exibido.
+- Verifique licenciamento e compressão adequada antes de subir (use HandBrake ou FFmpeg para reduzir tamanho).
+
+Se quiser, posso adicionar um arquivo de exemplo (pequeno) ou mover um vídeo que você enviar para este diretório.
